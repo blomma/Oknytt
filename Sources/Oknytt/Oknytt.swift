@@ -1,5 +1,5 @@
-import os
 import Foundation
+import os
 
 extension Logger {
     private static var subsystem = Bundle.main.bundleIdentifier!
@@ -18,8 +18,8 @@ public func DLog(
     column: UInt = #column
 ) {
     #if DEBUG
-    Logger.debug.debug(
-        "🟩 \(file) : \(view) : \(function) : \(line) : \(column) - \(message) 🟩")
+        Logger.debug.debug(
+            "🟩 \(file) : \(view) : \(function) : \(line) : \(column) - \(message) 🟩")
     #endif
 }
 
