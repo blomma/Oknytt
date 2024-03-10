@@ -24,7 +24,7 @@ public func DLog(
 }
 
 // get current dispatch queue label
-extension DispatchQueue {
+public extension DispatchQueue {
     static var currentLabel: String {
         return String(validatingUTF8: __dispatch_queue_get_label(nil)) ?? "unknown"
     }
