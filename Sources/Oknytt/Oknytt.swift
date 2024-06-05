@@ -18,8 +18,8 @@ public func DLog(
     column: UInt = #column
 ) {
     #if DEBUG
-        Logger.debug.debug(
-            "🟩 \(file) : \(view) : \(function) : \(line) : \(column) - \(message) 🟩")
+    Logger.debug.debug(
+        "🟩 \(file) : \(view) : \(function) : \(line) : \(column) - \(message) 🟩")
     #endif
 }
 
